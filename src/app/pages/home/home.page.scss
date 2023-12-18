@@ -1,0 +1,53 @@
+#body {
+  height: 100%;
+  background-color: var(--ion-color-background-primary);
+  background-image: url('/assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: 69% 74%;
+  background-position: 85% 23%;
+
+  #container {
+    background-color: var(--ion-color-background-container);
+    border-radius: 10px;
+    min-height: 20%;
+    min-width: 40%;
+    padding: 24px;
+    position: absolute;
+    top: 37%;
+    left: 19%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__title {
+      flex: 0 0 auto;
+      color: var(--ion-color-title);
+      font-size: 20px;
+      font-weight: bold;
+      height: 20%;
+    }
+
+    &__form {
+      flex: 1 1 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+
+      app-form {
+        width: 60%;
+        flex: 0 0 auto;
+      }
+
+
+      &__text {
+        font-size: 16px;
+        color: var(--ion-color-text); 
+        flex: 1 1 auto;
+        text-align: center;
+        margin-bottom: 16px;
+        border-left: 1px solid #e3e3e3;
+      }
+    }
+  }
+}

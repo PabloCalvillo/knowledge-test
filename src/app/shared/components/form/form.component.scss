@@ -1,0 +1,22 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  row-gap: 12px;
+  height: 100%;
+
+  #form {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 12px;
+    width: 100%;
+
+    &__item-selected {
+      font-size: 14px;
+      color: var(--ion-text-color);
+      font-weight: bold;
+      padding-top: 12px;
+    }
+  }
+}

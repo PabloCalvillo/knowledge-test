@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Custom Dropwdown test",
+    "value": "Custom Dropwdown test"
+  },
+  {
+    "label": "Second Dropwdown option",
+    "value": "Second Dropwdown option"
+  },
+  {
+    "label": "Third Dropwdown option",
+    "value": "Third Dropwdown option"
+  },
+  {
+    "label": "Another one",
+    "value": "Another one"
+  },
+  {
+    "label": "But not less important",
+    "value": "But not less important"
+  },
+  {
+    "label": "The latest option in the dropdown",
+    "value": "The latest option in the dropdown"
+  }
+]

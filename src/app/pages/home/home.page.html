@@ -1,0 +1,15 @@
+<ion-content [fullscreen]="true">
+  <div id="body">
+    <div id="container">
+      <div id="container__title">Custom Dropdown</div>
+      <div id="container__form">
+        <ng-container *ngIf="homeOptions$ | async as homeOptions">
+          <app-form [options]="homeOptions"></app-form>
+        </ng-container>
+        <div id="container__form__text">
+          This is a design example!!!!!
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

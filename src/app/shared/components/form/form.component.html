@@ -1,0 +1,12 @@
+<div id="container">
+  <div id="form">
+    <div id="form__dropdown" [formGroup]="form">
+      <app-select 
+      formControlName="customDropdown"
+      [options]="options" 
+      (selectedValue)="selectedValue($event)"
+      ></app-select>
+    </div>
+    <div id="form__item-selected">Selected: {{selected$ | async}}</div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div id="select" (click)="onClick()">
+  <div id="select__option_selected" 
+  [ngClass]="{
+    'select__disabled': disabled,
+    'select__border__open': open && !disabled,
+    'select__border': !open && !disabled
+  }"
+  >
+    <span class="select__option__font">{{selectedOption.label}}</span>
+    <div [ngClass]="open ? 'select__icon_open' : 'select__icon'">
+    </div>
+  </div>
+  <div id="select__dropdown" [ngClass]="open ? 'select__display_block' : 'select__display_none'">
+    <ul id="select__dropdown__list">
+      <li *ngFor="let option of options" id="select__dropdown__list__option"
+        [ngClass]="{'select__dropdown__list__option__selected': isSelected(option)}" (click)="onSelect(option)">
+        <div id="select__dropdown__list__option_container">
+          <span class="select__option__font">{{option.label}}</span>
+          <div *ngIf="isSelected(option)" class="select__option__icon"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
